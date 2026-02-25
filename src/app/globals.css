@@ -2,22 +2,34 @@
 
 @theme {
   --color-primary: #00CCFF;
-  --color-background-light: #FFFFFF;
-  --color-background-dark: #121212;
-  --color-charcoal: #333333;
+  --color-background-light: var(--card-bg);
+  --color-background-dark: var(--background);
+  --color-charcoal: var(--section-bg);
+  --color-muted: var(--text-muted);
+  --color-border: var(--border-color);
   --font-display: var(--font-oswald);
   --font-body: var(--font-roboto);
   /* Typography Scale */
-  --text-xs: 0.75rem;    /* 12px - minimum readable size */
-  --text-sm: 0.875rem;   /* 14px - small text, labels */
-  --text-base: 1rem;     /* 16px - body text */
-  --text-lg: 1.125rem;   /* 18px - large body text */
-  --text-xl: 1.25rem;    /* 20px - small headings */
-  --text-2xl: 1.5rem;    /* 24px - section headings */
-  --text-3xl: 1.875rem;  /* 30px - large headings */
-  --text-4xl: 2.25rem;   /* 36px - display headings */
-  --text-5xl: 3rem;      /* 48px - hero headings */
-  --text-6xl: 3.75rem;   /* 60px - main hero */
+  --text-xs: 0.75rem;
+  /* 12px - minimum readable size */
+  --text-sm: 0.875rem;
+  /* 14px - small text, labels */
+  --text-base: 1rem;
+  /* 16px - body text */
+  --text-lg: 1.125rem;
+  /* 18px - large body text */
+  --text-xl: 1.25rem;
+  /* 20px - small headings */
+  --text-2xl: 1.5rem;
+  /* 24px - section headings */
+  --text-3xl: 1.875rem;
+  /* 30px - large headings */
+  --text-4xl: 2.25rem;
+  /* 36px - display headings */
+  --text-5xl: 3rem;
+  /* 48px - hero headings */
+  --text-6xl: 3.75rem;
+  /* 60px - main hero */
 }
 
 * {
@@ -35,20 +47,30 @@ html {
 }
 
 :root {
-  --background: #f1f5f9;
-  --foreground: #333333;
+  --background: #f8fafc;
+  --foreground: #1e293b;
+  --card-bg: #ffffff;
+  --header-bg: #00CCFF;
+  --section-bg: #333333;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
 }
 
 .dark {
   --background: #121212;
   --foreground: #d1d5db;
+  --card-bg: #0f172a;
+  --header-bg: #00CCFF;
+  --section-bg: #333333;
+  --text-muted: #94a3b8;
+  --border-color: #1e293b;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
-  min-height: 100-vh;
+  min-height: 100vh;
   line-height: 1.6;
 }
 

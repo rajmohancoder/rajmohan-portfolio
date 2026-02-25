@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-slate-100 dark:bg-background-dark min-h-screen py-10 px-4">
-      <div className="max-w-[1100px] mx-auto bg-background-light dark:bg-slate-900 shadow-2xl overflow-hidden font-body text-charcoal dark:text-gray-300">
+    <div className="bg-background-dark min-h-screen py-10 px-4 transition-colors duration-500">
+      <div className="max-w-[1100px] mx-auto bg-background-light shadow-2xl overflow-hidden font-body text-foreground border border-border">
         <header className="bg-primary p-10 flex flex-col md:flex-row items-center justify-between relative">
           <div className="flex-1 text-white text-center md:text-left">
             <h1 className="text-5xl md:text-6xl font-bold font-display leading-tight uppercase">
@@ -55,7 +55,7 @@ export default function Home() {
                 <span className="material-icons text-primary mr-2 text-2xl">person</span>
                 <h2 className="text-2xl font-bold font-display tracking-wider">ABOUT ME</h2>
               </div>
-              <div className="text-base leading-relaxed text-gray-600 dark:text-gray-400">
+              <div className="text-base leading-relaxed text-muted">
                 <p>
                   <strong>Technophile and AI enthusiast</strong> with 16+ years of overall industry experience, currently serving as a Senior Technical Architect and MERN Stack Lead Developer. Specialized in Micro Frontend (MFE) architecture, Modern JavaScript (ES6+), React, Next.js, and Agentic AI development using MCP and GitHub Copilot.
                 </p>
@@ -128,19 +128,19 @@ export default function Home() {
               <div className="space-y-4 text-sm">
                 <div>
                   <h3 className="text-xs font-bold uppercase text-primary mb-2">APPLICATION DEVELOPMENT</h3>
-                  <div className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  <div className="text-muted leading-relaxed">
                     HTML5, SASS, Modern JavaScript (ES6+) / TypeScript, React / Next.js, Node.js / Express.js, REST API, Azure Cloud Services, PostgreSQL / MongoDB
                   </div>
                 </div>
                 <div>
                   <h3 className="text-xs font-bold uppercase text-primary mb-2">VERSION CONTROL / AUTOMATION / BUNDLER</h3>
-                  <div className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  <div className="text-muted leading-relaxed">
                     Git / GitHub, CI / CD Pipeline, Webpack, Micro Frontend, Vite
                   </div>
                 </div>
                 <div>
                   <h3 className="text-xs font-bold uppercase text-primary mb-2">AI & EMERGING TECHNOLOGIES</h3>
-                  <div className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  <div className="text-muted leading-relaxed">
                     Agentic AI Development, GitHub Copilot / Factory AI, Model Context Protocol (MCP), Azure AI Foundry, Google Antigravity / Stitch
                   </div>
                 </div>
@@ -188,7 +188,7 @@ export default function Home() {
                 <span className="material-icons text-primary mr-2 text-2xl">emoji_events</span>
                 <h2 className="text-2xl font-bold font-display tracking-wider">ACCOLADES</h2>
               </div>
-              <div className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
+              <div className="space-y-3 text-sm text-muted">
                 <p className="flex items-start">
                   <span className="text-primary mr-2">🡺</span>
                   <span>Received <strong>Star of the Month</strong> award for excellent performance.</span>
@@ -239,7 +239,7 @@ export default function Home() {
                       <span className="text-sm text-primary font-bold italic">{job.years}</span>
                     </div>
                     <p className="text-sm text-primary italic mb-2">{job.company}</p>
-                    <p className="text-sm leading-tight text-gray-600 dark:text-gray-400">
+                    <p className="text-sm leading-tight text-muted">
                       {job.desc}
                     </p>
                   </div>
@@ -253,7 +253,7 @@ export default function Home() {
                 <h2 className="text-2xl font-bold font-display tracking-wider">DOWNLOAD RESUME</h2>
               </div>
               <div className="text-center">
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                <p className="text-sm text-muted mb-4">
                   To know more about my projects and detailed work experience, please download my resume.
                 </p>
                 <a

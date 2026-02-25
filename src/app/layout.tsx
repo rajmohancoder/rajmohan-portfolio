@@ -15,8 +15,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Joseph T. Thomason Portfolio",
-  description: "Creative Designer Portfolio",
+  title: "Rajmohan S - UI Architect & Lead MERN Developer",
+  description: "Portfolio of Rajmohan S, Senior Technical Architect specialized in MFE, MERN Stack, and Agentic AI development.",
 };
 
 export default function RootLayout({

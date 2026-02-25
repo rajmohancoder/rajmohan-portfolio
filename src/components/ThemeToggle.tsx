@@ -14,12 +14,15 @@ export default function ThemeToggle() {
     }, [darkMode]);
 
     return (
-        <div className="fixed bottom-4 right-4 z-50">
+        <div className="fixed bottom-8 right-8 z-50">
             <button
-                className="bg-charcoal text-white p-3 rounded-full shadow-lg hover:bg-black transition-colors flex items-center justify-center"
+                className="bg-charcoal dark:bg-primary text-white p-4 rounded-full shadow-2xl hover:scale-110 cursor-pointer transition-all duration-300 flex items-center justify-center group"
                 onClick={() => setDarkMode(!darkMode)}
+                aria-label="Toggle Theme"
             >
-                <span className="material-icons">{darkMode ? "light_mode" : "dark_mode"}</span>
+                <span className="material-icons text-white group-hover:rotate-12 transition-transform duration-300">
+                    {darkMode ? "light_mode" : "dark_mode"}
+                </span>
             </button>
         </div>
     );
