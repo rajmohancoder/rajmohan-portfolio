@@ -10,9 +10,20 @@ export default function Home() {
             <h1 className="text-5xl md:text-6xl font-bold font-display leading-tight uppercase">
               RAJMOHAN S
             </h1>
-            <p className="text-xl md:text-2xl mt-2 tracking-widest italic font-light opacity-90">
-              UI ARCHITECT (MFE) | LEAD MERN STACK | UX/DEVOPS COLLABORATION | AGENTIC AI DEVELOPMENT | AI ENTHUSIAST | TECHNOPHILE
-            </p>
+            <div className="flex flex-wrap gap-x-4 gap-y-2 mt-4">
+              {[
+                "UI ARCHITECT (MFE)",
+                "LEAD MERN STACK",
+                "UX/DEVOPS COLLABORATION",
+                "AGENTIC AI DEVELOPMENT",
+                "AI ENTHUSIAST",
+                "TECHNOPHILE"
+              ].map((text, i) => (
+                <span key={i} className="flex items-center text-xs md:text-sm tracking-widest font-bold uppercase py-1 px-3 border border-white/30 rounded-full bg-white/10 backdrop-blur-sm whitespace-nowrap">
+                  {text}
+                </span>
+              ))}
+            </div>
             <div className="h-1 w-64 bg-white mt-4 hidden md:block"></div>
           </div>
           <div className="flex-shrink-0 my-8 md:my-0 px-8">
