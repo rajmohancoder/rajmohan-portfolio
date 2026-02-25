@@ -127,19 +127,19 @@ export default function Home() {
               </div>
               <div className="space-y-4 text-sm">
                 <div>
-                  <h3 className="text-xs font-bold uppercase text-primary mb-2">APPLICATION DEVELOPMENT</h3>
+                  <h3 className="text-base font-bold uppercase text-primary mb-2">APPLICATION DEVELOPMENT</h3>
                   <div className="text-muted leading-relaxed">
                     HTML5, SASS, Modern JavaScript (ES6+) / TypeScript, React / Next.js, Node.js / Express.js, REST API, Azure Cloud Services, PostgreSQL / MongoDB
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xs font-bold uppercase text-primary mb-2">VERSION CONTROL / AUTOMATION / BUNDLER</h3>
+                  <h3 className="text-base font-bold uppercase text-primary mb-2">VERSION CONTROL / AUTOMATION / BUNDLER</h3>
                   <div className="text-muted leading-relaxed">
                     Git / GitHub, CI / CD Pipeline, Webpack, Micro Frontend, Vite
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xs font-bold uppercase text-primary mb-2">AI & EMERGING TECHNOLOGIES</h3>
+                  <h3 className="text-base font-bold uppercase text-primary mb-2">AI & EMERGING TECHNOLOGIES</h3>
                   <div className="text-muted leading-relaxed">
                     Agentic AI Development, GitHub Copilot / Factory AI, Model Context Protocol (MCP), Azure AI Foundry, Google Antigravity / Stitch
                   </div>
