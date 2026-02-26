@@ -135,13 +135,13 @@ export default function Home() {
                 <div>
                   <h3 className="text-base font-bold uppercase text-primary mb-2">APPLICATION DEVELOPMENT</h3>
                   <div className="text-muted leading-relaxed">
-                    HTML5, SASS, Modern JavaScript (ES6+) / TypeScript, React / Next.js, Node.js / Express.js, REST API, Azure Cloud Services, PostgreSQL / MongoDB
+                    HTML5, SASS, Modern JavaScript (ES6+) / TypeScript, React / Next.js, Node.js / Express.js, REST API, PostgreSQL / MongoDB
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-base font-bold uppercase text-primary mb-2">VERSION CONTROL / AUTOMATION / BUNDLER</h3>
+                  <h3 className="text-base font-bold uppercase text-primary mb-2">CLOUD & DEVOPS</h3>
                   <div className="text-muted leading-relaxed">
-                    Git / GitHub, CI / CD Pipeline, Webpack, Micro Frontend, Vite
+                    Azure Cloud Services, Git / GitHub, CI / CD Pipeline, Webpack, Micro Frontend, Vite
                   </div>
                 </div>
                 <div>
