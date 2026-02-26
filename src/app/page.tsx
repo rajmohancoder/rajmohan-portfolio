@@ -38,21 +38,16 @@ export default function Home() {
           </div>
           <div className="flex-1 w-full md:w-auto space-y-2">
             {[
-              { icon: "phone", label: "PHONE:", value: "+ 91 9842158964" },
-              { icon: "email", label: "EMAIL:", value: "RAJMOHANCODER@GMAIL.COM" },
-              // { icon: "language", label: "WEBSITE:", value: "WWW.JTHOMASON-DESIGN.COM" },
-              { icon: "location_on", label: "LOCATION:", value: "CHENNAI, TAMILNADU, INDIA" },
+              { icon: "phone", value: "+ 91 9842158964" },
+              { icon: "email", value: "RAJMOHANCODER@GMAIL.COM" },
+              // { icon: "language", value: "WWW.JTHOMASON-DESIGN.COM" },
+              { icon: "location_on", value: "CHENNAI, TAMILNADU, INDIA" },
             ].map((item, idx) => (
               <div key={idx} className="flex items-center bg-charcoal text-white p-2.5">
                 <div className="w-10 flex justify-center border-r border-gray-600 mr-3">
                   <span className="material-icons text-primary text-base">{item.icon}</span>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-xs font-bold tracking-tighter opacity-70 leading-none mb-0.5">
-                    {item.label}
-                  </span>
-                  <span className="text-sm">{item.value}</span>
-                </div>
+                <span className="text-sm">{item.value}</span>
               </div>
             ))}
           </div>
@@ -201,15 +196,15 @@ export default function Home() {
               </div>
               <div className="space-y-3 text-sm text-muted">
                 <p className="flex items-start">
-                  <span className="text-primary mr-2">🡺</span>
+                  <span className="text-primary mr-2 mt-0.5"><span className="material-icons text-lg">star</span></span>
                   <span>Received <strong>Star of the Month</strong> award for excellent performance.</span>
                 </p>
                 <p className="flex items-start">
-                  <span className="text-primary mr-2">🡺</span>
+                  <span className="text-primary mr-2 mt-0.5"><span className="material-icons text-lg">workspace_premium</span></span>
                   <span>Received <strong>Exceptional performance rating</strong> in recognition of continuous and outstanding contributions delivered consistently across multiple projects.</span>
                 </p>
                 <p className="flex items-start">
-                  <span className="text-primary mr-2">🡺</span>
+                  <span className="text-primary mr-2 mt-0.5"><span className="material-icons text-lg">thumb_up</span></span>
                   <span>Received <strong>Pat on the Back Award</strong>, in recognition of making outstanding contribution for successful demonstration & delivery of Apple project at critical times.</span>
                 </p>
               </div>
