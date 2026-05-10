@@ -1,4 +1,7 @@
 import ThemeToggle from "@/components/ThemeToggle";
+import MiddleColumn from "@/components/MiddleColumn";
+import RightColumn from "@/components/RightColumn";
+import Footer from "@/components/Footer";
 import Image from "next/image";
 
 export default function Home() {
@@ -12,12 +15,12 @@ export default function Home() {
             </h1>
             <div className="flex flex-wrap gap-x-4 gap-y-2 mt-4">
               {[
-                "UI ARCHITECT (MFE)",
-                "LEAD MERN STACK",
-                "UX/DEVOPS COLLABORATION",
+                "FRONTEND TECHNICAL ARCHITECT (MFE)",
+                "SCALABLE FRONTEND SYSTEMS",
+                "MERN STACK",
+                "UX / DEVOPS / BACKEND COLLABORATION",
                 "AGENTIC AI DEVELOPMENT",
-                "AI ENTHUSIAST",
-                "TECHNOPHILE"
+                "AI ENTHUSIAST"
               ].map((text, i) => (
                 <span key={i} className="flex items-center text-xs md:text-sm tracking-widest font-bold uppercase py-1 px-3 border border-white/30 rounded-full bg-white/10 backdrop-blur-sm whitespace-nowrap">
                   {text}
@@ -40,7 +43,8 @@ export default function Home() {
             {[
               { icon: "phone", value: "+ 91 9842158964" },
               { icon: "email", value: "RAJMOHANCODER@GMAIL.COM" },
-              // { icon: "language", value: "WWW.JTHOMASON-DESIGN.COM" },
+              { icon: "group_work", value: "rajmohan14@hotmail.com" },
+              { icon: "work", value: "Available for Remote Work" },
               { icon: "location_on", value: "CHENNAI, TAMILNADU, INDIA" },
             ].map((item, idx) => (
               <div key={idx} className="flex items-center bg-charcoal text-white p-2.5">
@@ -63,10 +67,15 @@ export default function Home() {
               </div>
               <div className="text-base leading-relaxed text-muted">
                 <p>
-                  <strong>Technophile and AI enthusiast</strong> with 16+ years of overall industry experience, currently serving as a Senior Technical Architect and MERN Stack Lead Developer. Specialized in Micro Frontend (MFE) architecture, Modern JavaScript (ES6+), React, Next.js, and Agentic AI development using MCP and GitHub Copilot.
+                  UI Technical Architect with over 16+ years of industry experience specializing in scalable, enterprise-grade frontend development, with a strong focus on Micro Frontend (MFE) architecture.
                 </p>
+
                 <p className="mt-3">
-                  Track record of leading cross-functional teams and delivering enterprise-grade solutions for Apple, Ford, USBANK, and EY across Banking, Automotive, and Technology consulting domains. Deeply passionate about emerging technologies, open-source, and building innovative products that create real business value.
+                  Beyond coding, I bring strong team leadership, agile delivery, and architectural decision-making skills — having working with cross-functional teams and consistently delivered quality products on time.
+                </p>
+
+                <p className="mt-3">
+                  I'm a continuous learner, always staying current with emerging technologies, and I'm excited about opportunities where I can leverage my architecture and AI expertise to drive real business value.
                 </p>
               </div>
             </section>
@@ -84,23 +93,44 @@ export default function Home() {
                     years: "2002 - 2006",
                     desc: "Lorem ipsum is simply dummy text of the printing.",
                   }
-                ].map((edu, idx) => (
-                  <div key={idx}>
-                    <h3 className="font-bold font-display text-base uppercase">{edu.school}</h3>
-                    <br />
-                    <p className="text-sm italic text-primary font-bold">{edu.degree}</p>
-                    <p className="text-sm text-primary mb-1">{edu.years}</p>
-                    {/* <p className="text-xs leading-tight text-gray-500">{edu.desc}</p> */}
-                  </div>
-                ))}
-              </div>
-            </section>
+                 ].map((edu, idx) => (
+                   <div key={idx}>
+                     <h3 className="font-bold font-display text-base uppercase">{edu.school}</h3>
+                     <br />
+                     <p className="text-sm italic text-primary font-bold">{edu.degree}</p>
+                     <p className="text-sm text-primary mb-1">{edu.years}</p>
+                     {/* <p className="text-xs leading-tight text-gray-500">{edu.desc}</p> */}
+                   </div>
+                 ))}
+               </div>
+             </section>
 
-            <section>
-              <div className="flex items-center bg-charcoal text-white p-2.5 mb-4">
-                <span className="material-icons text-primary mr-2 text-2xl">share</span>
-                <h2 className="text-2xl font-bold font-display tracking-wider">SOCIAL NETWORK</h2>
-              </div>
+             <section>
+               <div className="flex items-center bg-charcoal text-white p-2.5 mb-4">
+                 <span className="material-icons text-primary mr-2 text-2xl">emoji_events</span>
+                 <h2 className="text-2xl font-bold font-display tracking-wider">ACCOLADES</h2>
+               </div>
+               <div className="space-y-3 text-sm text-muted">
+                 <p className="flex items-start">
+                   <span className="text-primary mr-2 mt-0.5"><span className="material-icons text-lg">star</span></span>
+                   <span>Received <strong>Star of the Month</strong> award for excellent performance.</span>
+                 </p>
+                 <p className="flex items-start">
+                   <span className="text-primary mr-2 mt-0.5"><span className="material-icons text-lg">workspace_premium</span></span>
+                   <span>Received <strong>Exceptional performance rating</strong> in recognition of continuous and outstanding contributions delivered consistently across multiple projects.</span>
+                 </p>
+                 <p className="flex items-start">
+                   <span className="text-primary mr-2 mt-0.5"><span className="material-icons text-lg">thumb_up</span></span>
+                   <span>Received <strong>Pat on the Back Award</strong>, in recognition of making outstanding contribution for successful demonstration & delivery of Apple project at critical times.</span>
+                 </p>
+               </div>
+             </section>
+
+             <section>
+               <div className="flex items-center bg-charcoal text-white p-2.5 mb-4">
+                 <span className="material-icons text-primary mr-2 text-2xl">share</span>
+                 <h2 className="text-2xl font-bold font-display tracking-wider">NETWORKS</h2>
+               </div>
               <div className="flex space-x-2">
                 <a
                   href="https://www.linkedin.com/in/rajmohans/"
@@ -125,157 +155,13 @@ export default function Home() {
           </div>
 
           {/* Middle Column */}
-          <div className="space-y-10">
-            <section>
-              <div className="flex items-center bg-charcoal text-white p-2.5 mb-4">
-                <span className="material-icons text-primary mr-2 text-2xl">pie_chart</span>
-                <h2 className="text-2xl font-bold font-display tracking-wider">SKILLS SUMMARY</h2>
-              </div>
-              <div className="space-y-4 text-sm">
-                <div>
-                  <h3 className="text-base font-bold uppercase text-primary mb-2">APPLICATION DEVELOPMENT</h3>
-                  <div className="text-muted leading-relaxed">
-                    HTML5, SASS, Modern JavaScript (ES6+) / TypeScript, React / Next.js, Node.js / Express.js, REST API, PostgreSQL / MongoDB
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-base font-bold uppercase text-primary mb-2">CLOUD & DEVOPS</h3>
-                  <div className="text-muted leading-relaxed">
-                    Azure Cloud Services, Git / GitHub, CI / CD Pipeline, Webpack, Micro Frontend, Vite
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-base font-bold uppercase text-primary mb-2">AI & EMERGING TECHNOLOGIES</h3>
-                  <div className="text-muted leading-relaxed">
-                    Agentic AI Development, GitHub Copilot / Factory AI, Model Context Protocol (MCP), Azure AI Foundry, Google Antigravity / Stitch
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* <section>
-              <div className="flex items-center bg-charcoal text-white p-2.5 mb-4">
-                <span className="material-icons text-primary mr-2 text-2xl">people</span>
-                <h2 className="text-2xl font-bold font-display tracking-wider">REFERENCES</h2>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  {
-                    name: "David P. Cleveland",
-                    title: "Creative Agency / New York",
-                    addr1: "2900 Waterline Lane Alarogordo,",
-                    addr2: "NM 88310",
-                    phone: "+1-505-470-1604",
-                    email: "www.yourwebsite.com",
-                  },
-                  {
-                    name: "Anthony M. Kim",
-                    title: "Creative Agency / New York",
-                    addr1: "2684 Pickstone Street Norfolk,",
-                    addr2: "VA 23504",
-                    phone: "+1-757-317-6872",
-                    email: "www.yourwebsite.com",
-                  },
-                ].map((ref, idx) => (
-                  <div key={idx} className="text-xs">
-                    <h3 className="font-bold font-display text-sm uppercase mb-1">{ref.name}</h3>
-                    <p className="text-primary italic font-bold mb-1">{ref.title}</p>
-                    <p className="text-gray-500">{ref.addr1}</p>
-                    <p className="text-gray-500 mb-1">{ref.addr2}</p>
-                    <p className="text-gray-600">Telephone: {ref.phone}</p>
-                    <p className="text-gray-600">Email: {ref.email}</p>
-                  </div>
-                ))}
-              </div>
-            </section> */}
-
-            <section>
-              <div className="flex items-center bg-charcoal text-white p-2.5 mb-4">
-                <span className="material-icons text-primary mr-2 text-2xl">emoji_events</span>
-                <h2 className="text-2xl font-bold font-display tracking-wider">ACCOLADES</h2>
-              </div>
-              <div className="space-y-3 text-sm text-muted">
-                <p className="flex items-start">
-                  <span className="text-primary mr-2 mt-0.5"><span className="material-icons text-lg">star</span></span>
-                  <span>Received <strong>Star of the Month</strong> award for excellent performance.</span>
-                </p>
-                <p className="flex items-start">
-                  <span className="text-primary mr-2 mt-0.5"><span className="material-icons text-lg">workspace_premium</span></span>
-                  <span>Received <strong>Exceptional performance rating</strong> in recognition of continuous and outstanding contributions delivered consistently across multiple projects.</span>
-                </p>
-                <p className="flex items-start">
-                  <span className="text-primary mr-2 mt-0.5"><span className="material-icons text-lg">thumb_up</span></span>
-                  <span>Received <strong>Pat on the Back Award</strong>, in recognition of making outstanding contribution for successful demonstration & delivery of Apple project at critical times.</span>
-                </p>
-              </div>
-            </section>
-          </div>
+          <MiddleColumn />
 
           {/* Right Column */}
-          <div className="space-y-10">
-            <section>
-              <div className="flex items-center bg-charcoal text-white p-2.5 mb-4">
-                <span className="material-icons text-primary mr-2 text-2xl">work</span>
-                <h2 className="text-2xl font-bold font-display tracking-wider">JOB EXPERIENCE</h2>
-              </div>
-              <div className="space-y-6">
-                {[
-                  {
-                    title: "Senior Technical Architect",
-                    years: "2022 - Present",
-                    company: "Hexaware Technologies",
-                    desc: "Designs scalable software system architectures that bridge business requirements with technical implementation while establishing technology standards for security and maintainability. Leverages AI-powered development tools like GitHub Copilot, Factory AI, and Claude to drive 30-40% efficiency gains in solution delivery and accelerate complex system prototyping.",
-                  },
-                  {
-                    title: "Senior Technical Lead",
-                    years: "2021 - 2022",
-                    company: "Publicis Sapient",
-                    desc: "Senior Technical Lead working mainly in amazon web services, mongo DB, Web Scraping using puppeteer, React js and Stencil js.",
-                  },
-                  {
-                    title: "Technical Lead",
-                    years: "2015 - 2021",
-                    company: "Cognizant Technology Solutions",
-                    desc: "Served as the Technical lead for a scrum team, driving full-stack development including UI interfaces, Web API controllers, data models, and performance optimization. Ensured code quality through design patterns, dependency injection, code reviews, and Sonar cloud quality gates while conducting accessibility testing with talkback features. Facilitated scrum ceremonies, mentored team members to become self-organized, and acted as the primary liaison between the team and management for technical and functional matters. Collaborated proactively with product owners and specialists to identify risks and deliver solutions on time across every sprint.",
-                  },
-                ].map((job, idx) => (
-                  <div key={idx} className="relative">
-                    <div className="flex justify-between items-start mb-1">
-                      <h3 className="font-bold font-display text-base uppercase">{job.title}</h3>
-                      <span className="text-sm text-primary font-bold italic">{job.years}</span>
-                    </div>
-                    <p className="text-sm text-primary italic mb-2">{job.company}</p>
-                    <p className="text-sm leading-tight text-muted">
-                      {job.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            <section>
-              <div className="flex items-center bg-charcoal text-white p-2.5 mb-4">
-                <span className="material-icons text-primary mr-2 text-2xl">download</span>
-                <h2 className="text-2xl font-bold font-display tracking-wider">DOWNLOAD RESUME</h2>
-              </div>
-              <div className="text-center">
-                <p className="text-sm text-muted mb-4">
-                  To know more about my projects and detailed work experience, please download my resume.
-                </p>
-                <a
-                  href="/resume/Rajmohan_S_UI_Architect_MERN_Agentic_AI_16yrs.docx"
-                  download
-                  className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 hover:bg-primary/80 transition-colors font-bold uppercase tracking-wider"
-                >
-                  <span className="material-icons">description</span>
-                  Download Resume
-                </a>
-              </div>
-            </section>
-          </div>
+          <RightColumn />
         </main>
 
-        <footer className="h-10 bg-primary w-full mt-4"></footer>
+        <Footer />
       </div>
       <ThemeToggle />
     </div>
